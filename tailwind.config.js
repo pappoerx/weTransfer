@@ -2,8 +2,15 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'Playfair' :'Playfair',
+        'Oswald': 'Oswald',
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 }
 

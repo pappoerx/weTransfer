@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/input.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>WE</title>
 </head>
@@ -12,7 +15,35 @@
 
     <div class="flex w-[30%] bg-[#C4D9A6] h-lvh">
         <div><img src="images-removebg-preview.png" alt="" class="w-12"></div>
-
+        <div class="flex items-center justify-center">
+            <!-- the card -->
+            <div class=" flex  bg-white h-96 w-60  ml-16 rounded-xl shadow-xl flex-col items-center ">
+                <!-- add files section -->
+                <div class="flex flex-row mr-10">
+                    <button class="bg-blue-600 text-white w-9 h-9 text-3xl flex items-center justify-center rounded-full shrink-0 pb-2 mt-3">+</button> 
+                    
+                    <div class="ml-2 flex flex-col mt-2">
+                        <div class="font-semibold">Add files</div>
+                        <a href="#" class="underline underline-offset-1 text-[#757779] text-sm">Or select a folder</a>
+                    </div>
+                    
+                </div>
+                <div class="h-[1px] w-[100%] bg-[#EAEDEE] mt-4">
+                    &nbsp;
+                </div>
+                <!-- under the add file section -->
+                <div class="bg-[#F7F9FA] w-[100%] flex items-center justify-center border-b-[1px] text-sm">
+                    Up to 2 GB free  <svg xmlns="http://www.w3.org/2000/svg" fill="#8E21CC" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[#8E21CC]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                      </svg> <div class="sm text-[#8E21CC]">Increase limit</div>
+                </div>
+                <!-- email section -->
+                <div class="h-10 border-b w-[100%] flex items-center justify-between ">
+                    <div class="ml-3 text-[#757779] ">Email</div> <div class="mr-3 text-[#757779] ">0 of 3</div>
+                </div>
+               <div class="flex items-center justify-center w-[100%] h-12 bg-[#F7F9FA] border-b-[#757779]"> <input type="email" placeholder="Enter email" class="outline-none  w-[100%] text-center placeholder:text-center flex items-center justify-center bg-[#F7F9FA] "></div>
+            </div>
+        </div>
     </div>
 <!-- middle side -->
     <div class="flex w-[32%] bg-white h-full">
@@ -20,23 +51,49 @@
     </div>
 
     <!-- right side -->
-
-    <div class="flex w-[38%] bg-[#C4D9A6] h-full justify-end pt-3 pb-3">
+    <div class="flex w-[38%] bg-[#C4D9A6] h-full  pt-3 pb-3 flex-col">
         <div class="flex ">
-            <div class="flex items-center space-x-5 mr-3 bg-white rounded-lg h-10 pl-2 pr-3 shadow-xl">
-                <a href="#">Features <select name="" id="featureItems" class="w- outline-none"></select> </a>
+            <div class="flex items-center space-x-5 mr-3 bg-white rounded-lg h-10 pl-2 ml-4 pr-3 shadow-xl">
+                <a href="#"> 
+                    <select name="" id="featureItems" class="w- outline-none">
+                        <option value="feature1">Feature </option>
+                        <option value="feature2">Jpeg files</option>
+                    </select> 
+                </a>
                 <a href="#">Pricing </a>
-                <a href="#">Use cases <select name="" id=""></select></a>
-                <a href="#">Resources <select name="" id=""></select></a>
+                <a href="#"> 
+                    <select name="" id="">
+                        <option value="usecase1">Use Case</option>
+                        <option value="usecase2">Office</option>
+                    </select>
+                </a>
+                <a href="#">
+                    <select name="" id="">
+                        <option value="resource1">Resource </option>
+                        <option value="resource2">Dropbox</option>
+                    </select>
+                </a>
             </div>
             <!-- login and signUp button -->
-            <div class="flex ">
-                <button class="bg-white h-10 rounded-l-lg w-16 shadow-lg">Login</button>
+                <div class="bg-white flex items-center rounded-lg pl-2 pr-2">
+                  <a href="#"> login </a>  &nbsp; <button class="bg-[#353535] text-sm text-white rounded-lg px-2 py-1 flex items-center">sign Up</button>
+                </div>
 
-                <button class="bg-white h-10 mr-4 rounded-r-lg pr-2 shadow-lg">
-                    <a href="#" class="bg-black text-white rounded-lg py-1 px-2 text-sm">Sign Up</a>
-                </button>
             </div>
+            <!-- right side section -->
+
+            <div class="flex items-center justify-center mt-48 flex-col">
+                <div style="font-family: Playfair;" class="flex items-center justify-center text-4xl font-Oswald flex-col">
+                    <strong class="mb-5 mr-16">Euphoria</strong>
+                    <div class="text-xl font-sans">
+                        How photographer <br>
+                        Charlie Tallott used the <br>
+                        camera to escape a dark <br>
+                        time in his life
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
 
     </div>
